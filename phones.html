@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Browse Phones &amp; Prices in Zimbabwe | KukuLanka</title>
+  <meta name="description" content="Browse KukuLanka phone prices in Zimbabwe. Search iPhone, Samsung Galaxy and Xiaomi Redmi models by storage, condition and price, then order directly on WhatsApp.">
+  
+  <meta name="keywords" content="phone prices Zimbabwe, iPhone prices Zimbabwe, Samsung prices Zimbabwe, Redmi prices Zimbabwe, phones Harare, smartphones Zimbabwe, KukuLanka phones">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="KukuLanka">
+  <link rel="canonical" href="https://kukulanka.co.zw/phones.html">
+
+  <meta property="og:site_name" content="KukuLanka">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Browse Phones &amp; Prices in Zimbabwe | KukuLanka">
+  <meta property="og:description" content="Browse KukuLanka phone prices in Zimbabwe. Search iPhone, Samsung Galaxy and Xiaomi Redmi models by storage, condition and price, then order directly on WhatsApp.">
+  <meta property="og:url" content="https://kukulanka.co.zw/phones.html">
+  <meta property="og:image" content="https://kukulanka.co.zw/assets/brand/logo.png">
+  <meta property="og:image:alt" content="KukuLanka logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Browse Phones &amp; Prices in Zimbabwe | KukuLanka">
+  <meta name="twitter:description" content="Browse KukuLanka phone prices in Zimbabwe. Search iPhone, Samsung Galaxy and Xiaomi Redmi models by storage, condition and price, then order directly on WhatsApp.">
+  <meta name="twitter:image" content="https://kukulanka.co.zw/assets/brand/logo.png">
+
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/main.css?v=20261018">
+</head>
+<body data-page="list">
+  <a class="skip-link" href="#main">Skip to products</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="KukuLanka home">Kuku<span>Lanka</span></a>
+      <form class="header-search" data-search-form role="search">
+        <span class="search-icon" aria-hidden="true"></span>
+        <label class="sr-only" for="catalogue-search">Search phones</label>
+        <input id="catalogue-search" name="q" type="search" autocomplete="off" placeholder="Search phones...">
+      </form>
+    </div>
+  </header>
+
+  <main id="main" class="catalogue-shell">
+    <aside class="brand-sidebar" aria-label="Phone brands">
+      <button class="brand-side-button" type="button" data-all-devices>All devices <span>›</span></button>
+      <button class="brand-side-button" type="button" data-brand="Apple">iPhone <span>›</span></button>
+      <button class="brand-side-button" type="button" data-brand="Samsung">Samsung <span>›</span></button>
+      <button class="brand-side-button" type="button" data-brand="Xiaomi Redmi">Xiaomi Redmi <span>›</span></button>
+    </aside>
+
+    <section class="catalogue-main">
+      <div class="mobile-brand-tabs" aria-label="Phone brands">
+        <button class="mobile-brand-tab" type="button" data-all-devices>All devices</button>
+        <button class="mobile-brand-tab" type="button" data-brand="Apple">iPhone</button>
+        <button class="mobile-brand-tab" type="button" data-brand="Samsung">Samsung</button>
+        <button class="mobile-brand-tab" type="button" data-brand="Xiaomi Redmi">Xiaomi Redmi</button>
+      </div>
+
+      <div id="series-tabs" class="series-tabs" aria-label="Phone series"></div>
+
+      <div class="catalogue-controls" aria-label="Catalogue controls">
+        <button class="control-button" id="price-sort" type="button">Price <span class="sort-mark" aria-hidden="true">↕</span></button>
+        <button class="control-button" id="model-button" type="button">Model <span class="model-mark" aria-hidden="true">☷</span></button>
+        <button class="control-button" id="filter-button" type="button">Filter <span class="filter-icon" aria-hidden="true"></span><span id="filter-count" class="filter-count" hidden></span></button>
+      </div>
+
+      <div class="results-meta"><span id="result-count">0 phones</span></div>
+      <div id="phone-results" class="phone-results" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div class="modal-layer" id="model-modal" hidden>
+    <button class="modal-scrim" type="button" data-close-modal="model-modal" aria-label="Close model selector"></button>
+    <section class="sheet model-sheet" role="dialog" aria-modal="true" aria-labelledby="model-sheet-title">
+      <div class="sheet-header"><h2 id="model-sheet-title">Choose Model</h2><button class="sheet-close" type="button" data-close-modal="model-modal" aria-label="Close">×</button></div>
+      <div class="model-sheet-grid">
+        <nav class="model-brand-nav" aria-label="Brands">
+          <button type="button" data-model-brand="Apple">iPhone</button>
+          <button type="button" data-model-brand="Samsung">Samsung</button>
+          <button type="button" data-model-brand="Xiaomi Redmi">Xiaomi Redmi</button>
+        </nav>
+        <div id="model-sheet-content" class="model-sheet-content"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-layer" id="filter-modal" hidden>
+    <button class="modal-scrim" type="button" data-close-modal="filter-modal" aria-label="Close filters"></button>
+    <section class="sheet filter-sheet" role="dialog" aria-modal="true" aria-labelledby="filter-sheet-title">
+      <div class="sheet-header"><h2 id="filter-sheet-title">Filter</h2><button class="sheet-close" type="button" data-close-modal="filter-modal" aria-label="Close">×</button></div>
+      <div class="filter-layout">
+        <nav class="filter-nav" aria-label="Filter sections">
+          <button class="is-active" type="button" data-filter-section="storage">Storage</button>
+          <button type="button" data-filter-section="battery">Battery Health</button>
+        </nav>
+        <div class="filter-content">
+          <section class="filter-panel is-active" data-filter-panel="storage">
+            <h3>Storage</h3>
+            <div id="storage-options" class="option-grid"></div>
+          </section>
+          <section class="filter-panel" data-filter-panel="battery">
+            <h3>Battery Health</h3>
+            <div class="option-grid">
+              <button type="button" data-battery="100">100%</button>
+              <button type="button" data-battery="95">95% and above</button>
+              <button type="button" data-battery="90">90% and above</button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="sheet-actions">
+        <button class="secondary-action" id="reset-filters" type="button">Reset</button>
+        <button class="primary-action" id="apply-filters" type="button">Apply</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/config.js?v=20261018"></script>
+  <script src="js/phones.js?v=20261018"></script>
+  <script src="js/main.js?v=20261018"></script>
+</body>
+</html>
